@@ -1,3 +1,7 @@
-com\myproject\configs\DispatcherServletInitializer.class
+com\myproject\configs\HibernateConfig.class
+com\myproject\repository\NewClass.class
 com\myproject\configs\WebApplicationContextConfig.class
+com\myproject\configs\TilesConfig.class
+com\myproject\configs\DispatcherServletInitializer.class
 com\myproject\controllers\HomeController.class
+com\myproject\service\NewClass.class
