@@ -1,4 +1,5 @@
 com\myproject\configs\HibernateConfig.class
+com\myproject\pojos\User.class
 com\myproject\repository\NewClass.class
 com\myproject\configs\WebApplicationContextConfig.class
 com\myproject\configs\TilesConfig.class
