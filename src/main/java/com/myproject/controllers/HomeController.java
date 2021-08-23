@@ -62,4 +62,12 @@ public class HomeController {
         
     }
     
+    @RequestMapping(path="/test")
+    public String testRedirect(Model model){
+        model.addAttribute("testMsg", "Welcome redirect");
+        
+        return "redirect:/hello/Lap";
+        
+    }
+    
 }

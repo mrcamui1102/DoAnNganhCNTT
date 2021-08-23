@@ -7,14 +7,18 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@taglib prefix="spring" uri="http://www.springframework.org/tags"  %>
 
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>HomePage</title>
+        <link href="<c:url value="/css/style.css"/>" rel="stylesheet">
     </head>
     <body>
+        <img src="<c:url value="/images/2.png" />" alt="test" />
+        <a href="<c:url value="/test" />">Redirect/forward</a>
         <h1>Welcome to my website</h1>
         <h1>Hello ${name}</h1>
         <c:if test="${fullName != null}">           
@@ -54,7 +58,10 @@
             
             <c:url value="/hello-post" var="action" />
         <form:form method="post" action="${action}" modelAttribute="user">
+            <spring:message code="label.firstName"/>
             <form:input path="firstName"/>
+            <br>
+            <spring:message code="label.lastName" />
             <form:input  path="lastName" />
             
             <input type="submit" value="send" />
