@@ -5,4 +5,5 @@ com\myproject\configs\WebApplicationContextConfig.class
 com\myproject\configs\TilesConfig.class
 com\myproject\configs\DispatcherServletInitializer.class
 com\myproject\controllers\HomeController.class
+com\myproject\pojos\Login.class
 com\myproject\service\NewClass.class

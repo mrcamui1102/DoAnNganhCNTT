@@ -6,6 +6,8 @@
 package com.myproject.controllers;
 
 import com.myproject.pojos.User;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -33,6 +35,15 @@ public class HomeController {
         
         
         model.addAttribute("user", new User());
+        
+        List<User> users = new ArrayList<>();
+        users.add(new User("Lap", "Nguyen"));
+        users.add(new User("Dao", "Nguyen"));
+        users.add(new User("Ky", "Nguyen"));
+        
+        model.addAttribute("users", users);
+                
+        
         return "index";
     }
     
