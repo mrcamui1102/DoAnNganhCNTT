@@ -27,4 +27,5 @@ Software Foundation//DTD Tiles Configuration 3.0//EN"
         <put-attribute name="content" value="/WEB-INF/jsp/hello.jsp" />
         
     </definition>
+    
 </tiles-definitions>
