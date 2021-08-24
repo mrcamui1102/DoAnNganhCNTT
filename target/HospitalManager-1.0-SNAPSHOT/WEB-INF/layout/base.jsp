@@ -23,6 +23,7 @@
         <meta name="author" content="uicookies.com" />
 
         <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
 
         <link rel="stylesheet" href="<c:url value="/css/bootstrap.min.css"/>">
         <link rel="stylesheet" href="<c:url value ="/css/open-iconic-bootstrap.min.css"/>">
@@ -47,15 +48,15 @@
 
           <div class="collapse navbar-collapse" id="probootstrap-nav">
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item active"><a href="index.html" class="nav-link pl-0">Home</a></li>
-              <li class="nav-item"><a href="departments.html" class="nav-link">Departments</a></li>
-              <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-              <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+              <li class="nav-item active"><a href="<c:url value="/"/>" class="nav-link pl-0">Home</a></li>
+              <li class="nav-item"><a href="<c:url value="/departments" />" class="nav-link">Departments</a></li>
+              <li class="nav-item"><a href="<c:url value="/about" />" class="nav-link">About</a></li>
+              <li class="nav-item"><a href="<c:url value="/contact" />" class="nav-link">Contact</a></li>
             </ul>
             <div class="ml-auto">
               <form action="#" method="get" class="probootstrap-search-form mb-sm-0 mb-3">
                 <div class="form-group">
-                  <button class="icon submit"><span class="icon-magnifying-glass"></span></button>
+                  <button class="icon submit"><span class="fa fa-search"></span></button>
                   <input type="text" class="form-control" placeholder="Search">
                 </div>
               </form>
@@ -74,14 +75,14 @@
         
 
         <script src="<c:url value="/js/jquery-3.2.1.min.js"/>"></script>
-        <script src="<c:url value="js/popper.min.js"/>"></script>
-        <script src="<c:url value="js/bootstrap.min.js"/>"></script>
-        <script src="<c:url value="js/owl.carousel.min.js"/>"></script>
-        <script src="<c:url value="js/jquery.waypoints.min.js"/>"></script>
-        <script src="<c:url value="js/bootstrap-datepicker.js"/>"></script>
-        <script src="<c:url value="js/jquery.animateNumber.min.js"/>"></script>
+        <script src="<c:url value="/js/popper.min.js"/>"></script>
+        <script src="<c:url value="/js/bootstrap.min.js"/>"></script>
+        <script src="<c:url value="/js/owl.carousel.min.js"/>"></script>
+        <script src="<c:url value="/js/jquery.waypoints.min.js"/>"></script>
+        <script src="<c:url value="/js/bootstrap-datepicker.js"/>"></script>
+        <script src="<c:url value="/js/jquery.animateNumber.min.js"/>"></script>
 
-        <script src="<c:url value="js/main.js"/>"></script>
+        <script src="<c:url value="/js/main.js"/>"></script>
 
 
         

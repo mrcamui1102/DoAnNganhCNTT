@@ -51,7 +51,8 @@ public class HomeController {
     public String hello(Model model, 
             @PathVariable(value="name") String name){
         model.addAttribute("message", "Welcome" + name +"!!!");
-        return "hello";
+        
+        return "departments";
     }
     
     @RequestMapping(path="/hello-post", method=RequestMethod.POST)
@@ -66,9 +67,33 @@ public class HomeController {
     public String testRedirect(Model model){
         model.addAttribute("testMsg", "Welcome redirect");
         
-        return "redirect:/hello/Lap";
+        return "redirect:hello/Lap";
         
     }
+    
+    @RequestMapping(path="/departments")
+    public String departmentsView(Model model){
+        model.addAttribute("messages", "welcome departments");
+        
+        return "departments";
+    }
+    
+    
+    @RequestMapping(path="/about")
+    public String aboutView(Model model){
+        model.addAttribute("messages", "welcome about");
+        
+        return "about";
+    }
+    
+    @RequestMapping(path="/contact")
+    public String contactView(){
+        
+        return "contact";
+    }
+    
+    
+    
     
     
 }

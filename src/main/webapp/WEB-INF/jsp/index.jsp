@@ -32,7 +32,7 @@
           <div class="row">
             <div class="col-md probootstrap-feature-item" style="background-image: url(images/img_1.jpg);">
               <div class="probootstrap-feature-item-text">
-                <span class="icon"><i class="flaticon-first-aid-kit display-4"></i></span>
+                <span class="icon"><i class="fa fa-medkit"></i></span>
                 <h2>Pediatric <span>Therapy</span></h2>
               </div>
             </div> 
@@ -46,7 +46,7 @@
             </div> 
             <div class="col-md probootstrap-feature-item" style="background-image: url(images/img_2.jpg);">
               <div class="probootstrap-feature-item-text">
-                <span class="icon"><i class="flaticon-gym-control-of-exercises-with-a-list-on-a-clipboard-and-heart-beats display-4"></i></span>
+                <span class="icon"><i class="fas fa-clipboard-list"></i></span>
 
                 <h2>Psychiatric <span>Therapy</span></h2>
               </div>
@@ -68,7 +68,7 @@
                   <li><a href="#">Plastic Surgery</a></li>
                   <li><a href="#">Neurosurgery</a></li>
                 </ul>
-                <p><a href="#" class="arrow-link text-white">More departments  <i class="icon-chevron-right"></i></a></p>
+                <p><a href="#" class="arrow-link text-white">More departments  <i class="fa fa-chevron-right"></i></a></p>
               </div>
             </div>
             <div class="col-md-9 pl-md-5 pl-0">
@@ -166,7 +166,7 @@
                   <h2><span class="date">November 15, 2017</span><a href="#">Want a simple and easy-to-use EMR? Well, you can have it for free. </a></h2>
                 </li>
               </ul>
-              <p><a href="#" class="arrow-link">View All  <i class="icon-chevron-right"></i></a></p>
+              <p><a href="#" class="arrow-link">View All  <i class="fa fa-chevron-right"></i></a></p>
             </div>
             <div class="col-md-6 p-md-5 p-3 probootstrap-aside-stretch-right">
               <h2 class="h1 text-white">Make an Appointment</h2>
