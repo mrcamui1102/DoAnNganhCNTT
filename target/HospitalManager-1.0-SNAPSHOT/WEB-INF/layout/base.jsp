@@ -52,6 +52,17 @@
               <li class="nav-item"><a href="<c:url value="/departments" />" class="nav-link">Departments</a></li>
               <li class="nav-item"><a href="<c:url value="/about" />" class="nav-link">About</a></li>
               <li class="nav-item"><a href="<c:url value="/contact" />" class="nav-link">Contact</a></li>
+              <c:if test="${pageContext.request.userPrincipal.name == null}">
+                <li class="nav-item"><a href="<c:url value="/login" />" class="nav-link">Login</a></li>
+
+              </c:if>
+              <c:if test="${pageContext.request.userPrincipal.name != null}">
+                <li class="nav-item">
+                    <a href="<c:url value="/" />" class="nav-link">${pageContext.request.userPrincipal.name}</a>
+                </li>
+
+              </c:if>
+
             </ul>
             <div class="ml-auto">
               <form action="#" method="get" class="probootstrap-search-form mb-sm-0 mb-3">

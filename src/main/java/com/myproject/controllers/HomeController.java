@@ -32,20 +32,16 @@ public class HomeController {
             model.addAttribute("name", String.format("%s %s", firstName, lastName));
         else
             model.addAttribute("name", "Lap");
-        
-        
-        model.addAttribute("user", new User());
-        
-        List<User> users = new ArrayList<>();
-        users.add(new User("Lap", "Nguyen"));
-        users.add(new User("Dao", "Nguyen"));
-        users.add(new User("Ky", "Nguyen"));
-        
-        model.addAttribute("users", users);
                 
         
         return "index";
     }
+    
+    
+//    @RequestMapping("/")
+//    public String index(){
+//        return "index";
+//    }
     
     @RequestMapping("/hello/{name}")
     public String hello(Model model, 
