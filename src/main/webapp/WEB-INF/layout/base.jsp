@@ -54,12 +54,16 @@
               <li class="nav-item"><a href="<c:url value="/contact" />" class="nav-link">Contact</a></li>
               <c:if test="${pageContext.request.userPrincipal.name == null}">
                 <li class="nav-item"><a href="<c:url value="/login" />" class="nav-link">Login</a></li>
+                <li class="nav-item"><a href="<c:url value="/register" />" class="nav-link">Dang ky</a></li>
 
               </c:if>
               <c:if test="${pageContext.request.userPrincipal.name != null}">
                 <li class="nav-item">
                     <a href="<c:url value="/" />" class="nav-link">${pageContext.request.userPrincipal.name}</a>
                 </li>
+                <li class="nav-item">
+                    <a href="<c:url value="/logout" />" class="nav-link">Logout</a>
+                </li>   
 
               </c:if>
 

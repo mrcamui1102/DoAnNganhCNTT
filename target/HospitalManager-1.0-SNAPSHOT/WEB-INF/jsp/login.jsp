@@ -15,19 +15,27 @@
     </div>
     
 </c:if>
+<c:if test="${param.accessDenied}">
+    <div class="alert alert-danger">
+        Ban khong co quyen truy cap!!
+        
+    </div>
+     
+</c:if>
 
 <c:url value="/login" var="action" />
 <form class="text-danger" method="post" action="${action}">
     <div class="form-group">
         <lable for="username">Username</lable>
-        <input type="text" id="username" name="username" class="form-control"/>
+        <input type="text" id="username" name="username" />
     </div>
     <div class="form-group">
         <lable for="password">Password</lable>
-        <input type="password" id="password" name="password" class="form-control"/>
+        <input type="password" id="password" name="password""/>
     </div>
     <div class="form-group">
         <input type="submit" value="Sign in" />
     </div>
+    
     
 </form>

@@ -6,6 +6,7 @@
 package com.myproject.configs;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -31,6 +32,7 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     private UserDetailsService userDetailsService;
     
+    @Bean
     public BCryptPasswordEncoder passwordEncoder(){
         return new BCryptPasswordEncoder();
     }
@@ -48,6 +50,15 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
                 .passwordParameter("password");
         
        http.formLogin().defaultSuccessUrl("/").failureUrl("/login?error");
+       
+       http.logout().logoutSuccessUrl("/login");
+       
+       http.exceptionHandling().accessDeniedPage("/login?accessDenied");
+       
+       http.authorizeRequests().antMatchers("/").permitAll()
+               .antMatchers("/admin/**").access("hasRole('ROLE_ADMIN')");
+       
+       
        
        http.csrf().disable();
     }
